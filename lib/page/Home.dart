@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
         body: Center(
             child: ListView.builder(
                 itemCount: _dataFromAPI.length,
-                itemBuilder: (context, inti) {
+                itemBuilder: (context, i) {
                   final post = _dataFromAPI[i];
                   return Text(
                       "newsId:${post["newsId"]}\n News_Detail : ${post["News_Detail"]}");
